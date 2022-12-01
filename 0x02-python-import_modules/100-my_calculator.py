@@ -10,9 +10,9 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     funcs = [add, sub, mul, div]
     for i, s in enumerate(ops):
-            if argv[2] == s:
-                print("{} {} {} = {}".format(a, s, b, funcs[i](a, b)))
-                break
+        if argv[2] == s:
+            print("{} {} {} = {}".format(a, s, b, funcs[i](a, b)))
+            break
     else:
-            print("Unknown operator. Available operators: +, -, * and /")
-            quit(1)
+        print("Unknown operator. Available operators: +, -, * and /")
+        quit(1)
